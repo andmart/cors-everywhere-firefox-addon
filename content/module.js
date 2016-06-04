@@ -180,7 +180,7 @@ var spenibus_corsEverywhere = {
       if(reqHeaders['Access-Control-Request-Method'] !== null) {
          httpChannel.setResponseHeader(
             'Access-Control-Allow-Methods',
-            reqHeaders['Access-Control-Request-Method'],
+            'GET, POST, OPTIONS, PUT, DELETE, HEAD, TRACE, CONNECT',
             false
          );
       }
